@@ -1,0 +1,656 @@
+{
+  "generator": [
+    {
+      "generator_id": "thermal_1",
+      "output_min": 15,
+      "output_max": 80,
+      "ramp_up_rate": 15,
+      "ramp_down_rate": 15,
+      "min_up_time": 3,
+      "min_down_time": 2,
+      "cost_fixed": 1200,
+      "cost_variable": 42,
+      "initial_on_time": 0,
+      "initial_off_time": 99,
+      "initial_energy": 0
+    },
+    {
+      "generator_id": "thermal_2",
+      "output_min": 10,
+      "output_max": 45,
+      "ramp_up_rate": 20,
+      "ramp_down_rate": 20,
+      "min_up_time": 2,
+      "min_down_time": 2,
+      "cost_fixed": 600,
+      "cost_variable": 70,
+      "initial_on_time": 0,
+      "initial_off_time": 99,
+      "initial_energy": 0
+    }
+  ],
+  "renewable_capacity": [
+    {
+      "renewable_id": "pv_1",
+      "capacity": 60
+    },
+    {
+      "renewable_id": "pv_2",
+      "capacity": 80
+    }
+  ],
+  "renewable_forecast": [
+    {
+      "pv_1": [
+        {
+          "hour": 1,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 2,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 3,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 4,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 5,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 6,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 7,
+          "pv_forecast": 0.03
+        },
+        {
+          "hour": 8,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 9,
+          "pv_forecast": 0.25
+        },
+        {
+          "hour": 10,
+          "pv_forecast": 0.3
+        },
+        {
+          "hour": 11,
+          "pv_forecast": 0.23
+        },
+        {
+          "hour": 12,
+          "pv_forecast": 0.27
+        },
+        {
+          "hour": 13,
+          "pv_forecast": 0.27
+        },
+        {
+          "hour": 14,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 15,
+          "pv_forecast": 0.11
+        },
+        {
+          "hour": 16,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 17,
+          "pv_forecast": 0.04
+        },
+        {
+          "hour": 18,
+          "pv_forecast": 0.02
+        },
+        {
+          "hour": 19,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 20,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 21,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 22,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 23,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 24,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 25,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 26,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 27,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 28,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 29,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 30,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 31,
+          "pv_forecast": 0.02
+        },
+        {
+          "hour": 32,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 33,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 34,
+          "pv_forecast": 0.1
+        },
+        {
+          "hour": 35,
+          "pv_forecast": 0.28
+        },
+        {
+          "hour": 36,
+          "pv_forecast": 0.12
+        },
+        {
+          "hour": 37,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 38,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 39,
+          "pv_forecast": 0.13
+        },
+        {
+          "hour": 40,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 41,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 42,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 43,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 44,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 45,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 46,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 47,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 48,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 49,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 50,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 51,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 52,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 53,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 54,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 55,
+          "pv_forecast": 0.14
+        },
+        {
+          "hour": 56,
+          "pv_forecast": 0.35
+        },
+        {
+          "hour": 57,
+          "pv_forecast": 0.57
+        },
+        {
+          "hour": 58,
+          "pv_forecast": 0.8
+        },
+        {
+          "hour": 59,
+          "pv_forecast": 0.96
+        },
+        {
+          "hour": 60,
+          "pv_forecast": 0.98
+        },
+        {
+          "hour": 61,
+          "pv_forecast": 1.0
+        },
+        {
+          "hour": 62,
+          "pv_forecast": 0.95
+        },
+        {
+          "hour": 63,
+          "pv_forecast": 0.8
+        },
+        {
+          "hour": 64,
+          "pv_forecast": 0.6
+        },
+        {
+          "hour": 65,
+          "pv_forecast": 0.36
+        },
+        {
+          "hour": 66,
+          "pv_forecast": 0.12
+        },
+        {
+          "hour": 67,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 68,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 69,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 70,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 71,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 72,
+          "pv_forecast": 0.0
+        }
+      ]
+    },
+    {
+      "pv_2": [
+        {
+          "hour": 1,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 2,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 3,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 4,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 5,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 6,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 7,
+          "pv_forecast": 0.03
+        },
+        {
+          "hour": 8,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 9,
+          "pv_forecast": 0.25
+        },
+        {
+          "hour": 10,
+          "pv_forecast": 0.3
+        },
+        {
+          "hour": 11,
+          "pv_forecast": 0.23
+        },
+        {
+          "hour": 12,
+          "pv_forecast": 0.27
+        },
+        {
+          "hour": 13,
+          "pv_forecast": 0.27
+        },
+        {
+          "hour": 14,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 15,
+          "pv_forecast": 0.11
+        },
+        {
+          "hour": 16,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 17,
+          "pv_forecast": 0.04
+        },
+        {
+          "hour": 18,
+          "pv_forecast": 0.02
+        },
+        {
+          "hour": 19,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 20,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 21,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 22,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 23,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 24,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 25,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 26,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 27,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 28,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 29,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 30,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 31,
+          "pv_forecast": 0.02
+        },
+        {
+          "hour": 32,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 33,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 34,
+          "pv_forecast": 0.1
+        },
+        {
+          "hour": 35,
+          "pv_forecast": 0.28
+        },
+        {
+          "hour": 36,
+          "pv_forecast": 0.12
+        },
+        {
+          "hour": 37,
+          "pv_forecast": 0.16
+        },
+        {
+          "hour": 38,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 39,
+          "pv_forecast": 0.13
+        },
+        {
+          "hour": 40,
+          "pv_forecast": 0.08
+        },
+        {
+          "hour": 41,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 42,
+          "pv_forecast": 0.06
+        },
+        {
+          "hour": 43,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 44,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 45,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 46,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 47,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 48,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 49,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 50,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 51,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 52,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 53,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 54,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 55,
+          "pv_forecast": 0.14
+        },
+        {
+          "hour": 56,
+          "pv_forecast": 0.35
+        },
+        {
+          "hour": 57,
+          "pv_forecast": 0.57
+        },
+        {
+          "hour": 58,
+          "pv_forecast": 0.8
+        },
+        {
+          "hour": 59,
+          "pv_forecast": 0.96
+        },
+        {
+          "hour": 60,
+          "pv_forecast": 0.98
+        },
+        {
+          "hour": 61,
+          "pv_forecast": 1.0
+        },
+        {
+          "hour": 62,
+          "pv_forecast": 0.95
+        },
+        {
+          "hour": 63,
+          "pv_forecast": 0.8
+        },
+        {
+          "hour": 64,
+          "pv_forecast": 0.6
+        },
+        {
+          "hour": 65,
+          "pv_forecast": 0.36
+        },
+        {
+          "hour": 66,
+          "pv_forecast": 0.12
+        },
+        {
+          "hour": 67,
+          "pv_forecast": 0.01
+        },
+        {
+          "hour": 68,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 69,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 70,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 71,
+          "pv_forecast": 0.0
+        },
+        {
+          "hour": 72,
+          "pv_forecast": 0.0
+        }
+      ]
+    }
+  ],
+  "storage": [
+    {
+      "storage_id": "battery_1",
+      "soc_min": 20,
+      "soc_max": 100,
+      "discharge_max": 20,
+      "charge_max": 20,
+      "soc_init": 45
+    },
+    {
+      "storage_id": "battery_2",
+      "soc_min": 10,
+      "soc_max": 60,
+      "discharge_max": 15,
+      "charge_max": 15,
+      "soc_init": 25
+    }
+  ],
+  "charging_jobs": [
+    {
+      "job_id": "battery_1_chg",
+      "target_storage": "battery_1"
+    },
+    {
+      "job_id": "battery_2_chg",
+      "target_storage": "battery_2"
+    }
+  ]
+}

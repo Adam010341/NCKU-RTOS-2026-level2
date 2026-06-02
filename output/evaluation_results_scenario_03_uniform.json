@@ -1,0 +1,1191 @@
+{
+  "hard_deadline_miss_rate": 0.061224489795918366,
+  "soft_deadline_miss_rate": 0.0,
+  "average_tardiness": 0.0,
+  "max_tardiness": 0,
+  "average_response_time": 3.4482758620689653,
+  "max_response_time": 6,
+  "completion_time_jitter": 55.5,
+  "acceptance_test": {
+    "sporadic_total_jobs": 5,
+    "sporadic_accepted_jobs": 5,
+    "sporadic_completed_before_deadline": 5,
+    "completed_sporadic_execution_time": 11,
+    "total_sporadic_execution_time": 11,
+    "sporadic_value_rate": 1.0
+  },
+  "sporadic_value_rate": 1.0,
+  "post_acceptance_violation_rate": 0.0,
+  "generator_cost": 273468.80000000005,
+  "market_revenue": 285286.20000000007,
+  "objective_value": -11817.400000000023,
+  "details": {
+    "time_base": 1,
+    "periodic_job_count": 44,
+    "sporadic_job_count": 5,
+    "aperiodic_job_count": 12,
+    "hard_deadline_missed_jobs": [
+      "p1_12",
+      "p2_12",
+      "p5_5"
+    ],
+    "soft_deadline_missed_jobs": [],
+    "completion_time_jitter_by_periodic_task": {
+      "p1": 60.0,
+      "p2": 60.0,
+      "p3": 60.0,
+      "p4": 60.0,
+      "p5": 45.0,
+      "p6": 48.0
+    },
+    "periodic_jobs": [
+      {
+        "id": "p1_1",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 5,
+        "absolute_deadline": 11,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          10
+        ],
+        "completed": true,
+        "completion_time": 10,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_2",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 11,
+        "absolute_deadline": 17,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          16
+        ],
+        "completed": true,
+        "completion_time": 16,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_3",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 17,
+        "absolute_deadline": 23,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          22
+        ],
+        "completed": true,
+        "completion_time": 22,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_4",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 23,
+        "absolute_deadline": 29,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          28
+        ],
+        "completed": true,
+        "completion_time": 28,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_5",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 29,
+        "absolute_deadline": 35,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          34
+        ],
+        "completed": true,
+        "completion_time": 34,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_6",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 35,
+        "absolute_deadline": 41,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          40
+        ],
+        "completed": true,
+        "completion_time": 40,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_7",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 41,
+        "absolute_deadline": 47,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          46
+        ],
+        "completed": true,
+        "completion_time": 46,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_8",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 47,
+        "absolute_deadline": 53,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          52
+        ],
+        "completed": true,
+        "completion_time": 52,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_9",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 53,
+        "absolute_deadline": 59,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          58
+        ],
+        "completed": true,
+        "completion_time": 58,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_10",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 59,
+        "absolute_deadline": 65,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          64
+        ],
+        "completed": true,
+        "completion_time": 64,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_11",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 65,
+        "absolute_deadline": 71,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          70
+        ],
+        "completed": true,
+        "completion_time": 70,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p1_12",
+        "task_id": "p1",
+        "type": "periodic",
+        "release_time": 71,
+        "absolute_deadline": 77,
+        "execution_time": 1,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [],
+        "completed": false,
+        "completion_time": null,
+        "response_time": null,
+        "tardiness": 0,
+        "deadline_miss": true
+      },
+      {
+        "id": "p2_1",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 4,
+        "absolute_deadline": 10,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          10
+        ],
+        "completed": true,
+        "completion_time": 10,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_2",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 10,
+        "absolute_deadline": 16,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          16
+        ],
+        "completed": true,
+        "completion_time": 16,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_3",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 16,
+        "absolute_deadline": 22,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          22
+        ],
+        "completed": true,
+        "completion_time": 22,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_4",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 22,
+        "absolute_deadline": 28,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          28
+        ],
+        "completed": true,
+        "completion_time": 28,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_5",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 28,
+        "absolute_deadline": 34,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          34
+        ],
+        "completed": true,
+        "completion_time": 34,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_6",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 34,
+        "absolute_deadline": 40,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          40
+        ],
+        "completed": true,
+        "completion_time": 40,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_7",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 40,
+        "absolute_deadline": 46,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          46
+        ],
+        "completed": true,
+        "completion_time": 46,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_8",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 46,
+        "absolute_deadline": 52,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          52
+        ],
+        "completed": true,
+        "completion_time": 52,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_9",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 52,
+        "absolute_deadline": 58,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          58
+        ],
+        "completed": true,
+        "completion_time": 58,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_10",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 58,
+        "absolute_deadline": 64,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          64
+        ],
+        "completed": true,
+        "completion_time": 64,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_11",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 64,
+        "absolute_deadline": 70,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          70
+        ],
+        "completed": true,
+        "completion_time": 70,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p2_12",
+        "task_id": "p2",
+        "type": "periodic",
+        "release_time": 70,
+        "absolute_deadline": 76,
+        "execution_time": 1,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [],
+        "completed": false,
+        "completion_time": null,
+        "response_time": null,
+        "tardiness": 0,
+        "deadline_miss": true
+      },
+      {
+        "id": "p3_1",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 4,
+        "absolute_deadline": 16,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          5,
+          6
+        ],
+        "completed": true,
+        "completion_time": 6,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p3_2",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 16,
+        "absolute_deadline": 28,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          17,
+          18
+        ],
+        "completed": true,
+        "completion_time": 18,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p3_3",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 28,
+        "absolute_deadline": 40,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          29,
+          30
+        ],
+        "completed": true,
+        "completion_time": 30,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p3_4",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 40,
+        "absolute_deadline": 52,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          41,
+          42
+        ],
+        "completed": true,
+        "completion_time": 42,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p3_5",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 52,
+        "absolute_deadline": 64,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          53,
+          54
+        ],
+        "completed": true,
+        "completion_time": 54,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p3_6",
+        "task_id": "p3",
+        "type": "periodic",
+        "release_time": 64,
+        "absolute_deadline": 76,
+        "execution_time": 2,
+        "energy_demand": 7.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          65,
+          66
+        ],
+        "completed": true,
+        "completion_time": 66,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_1",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 1,
+        "absolute_deadline": 13,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          2,
+          3
+        ],
+        "completed": true,
+        "completion_time": 3,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_2",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 13,
+        "absolute_deadline": 25,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          14,
+          15
+        ],
+        "completed": true,
+        "completion_time": 15,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_3",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 25,
+        "absolute_deadline": 37,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          26,
+          27
+        ],
+        "completed": true,
+        "completion_time": 27,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_4",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 37,
+        "absolute_deadline": 49,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          38,
+          39
+        ],
+        "completed": true,
+        "completion_time": 39,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_5",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 49,
+        "absolute_deadline": 61,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          50,
+          51
+        ],
+        "completed": true,
+        "completion_time": 51,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p4_6",
+        "task_id": "p4",
+        "type": "periodic",
+        "release_time": 61,
+        "absolute_deadline": 73,
+        "execution_time": 2,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          62,
+          63
+        ],
+        "completed": true,
+        "completion_time": 63,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p5_1",
+        "task_id": "p5",
+        "type": "periodic",
+        "release_time": 10,
+        "absolute_deadline": 13,
+        "execution_time": 3,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          11,
+          12,
+          13
+        ],
+        "completed": true,
+        "completion_time": 13,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p5_2",
+        "task_id": "p5",
+        "type": "periodic",
+        "release_time": 25,
+        "absolute_deadline": 28,
+        "execution_time": 3,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          26,
+          27,
+          28
+        ],
+        "completed": true,
+        "completion_time": 28,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p5_3",
+        "task_id": "p5",
+        "type": "periodic",
+        "release_time": 40,
+        "absolute_deadline": 43,
+        "execution_time": 3,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          41,
+          42,
+          43
+        ],
+        "completed": true,
+        "completion_time": 43,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p5_4",
+        "task_id": "p5",
+        "type": "periodic",
+        "release_time": 55,
+        "absolute_deadline": 58,
+        "execution_time": 3,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          56,
+          57,
+          58
+        ],
+        "completed": true,
+        "completion_time": 58,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p5_5",
+        "task_id": "p5",
+        "type": "periodic",
+        "release_time": 70,
+        "absolute_deadline": 73,
+        "execution_time": 3,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          71,
+          72
+        ],
+        "completed": false,
+        "completion_time": null,
+        "response_time": null,
+        "tardiness": 0,
+        "deadline_miss": true
+      },
+      {
+        "id": "p6_1",
+        "task_id": "p6",
+        "type": "periodic",
+        "release_time": 3,
+        "absolute_deadline": 6,
+        "execution_time": 3,
+        "energy_demand": 17.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          4,
+          5,
+          6
+        ],
+        "completed": true,
+        "completion_time": 6,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p6_2",
+        "task_id": "p6",
+        "type": "periodic",
+        "release_time": 27,
+        "absolute_deadline": 30,
+        "execution_time": 3,
+        "energy_demand": 17.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          28,
+          29,
+          30
+        ],
+        "completed": true,
+        "completion_time": 30,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "p6_3",
+        "task_id": "p6",
+        "type": "periodic",
+        "release_time": 51,
+        "absolute_deadline": 54,
+        "execution_time": 3,
+        "energy_demand": 17.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          52,
+          53,
+          54
+        ],
+        "completed": true,
+        "completion_time": 54,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      }
+    ],
+    "sporadic_jobs": [
+      {
+        "id": "s_3_01",
+        "task_id": "s_3_01",
+        "type": "sporadic",
+        "release_time": 3,
+        "absolute_deadline": 9,
+        "execution_time": 1,
+        "energy_demand": 5.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          3
+        ],
+        "completed": true,
+        "completion_time": 3,
+        "response_time": 0,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "s_3_02",
+        "task_id": "s_3_02",
+        "type": "sporadic",
+        "release_time": 11,
+        "absolute_deadline": 20,
+        "execution_time": 3,
+        "energy_demand": 13.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          11,
+          12,
+          13
+        ],
+        "completed": true,
+        "completion_time": 13,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "s_3_03",
+        "task_id": "s_3_03",
+        "type": "sporadic",
+        "release_time": 30,
+        "absolute_deadline": 35,
+        "execution_time": 2,
+        "energy_demand": 8.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          30,
+          31
+        ],
+        "completed": true,
+        "completion_time": 31,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "s_3_04",
+        "task_id": "s_3_04",
+        "type": "sporadic",
+        "release_time": 58,
+        "absolute_deadline": 61,
+        "execution_time": 2,
+        "energy_demand": 12.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          58,
+          59
+        ],
+        "completed": true,
+        "completion_time": 59,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "s_3_05",
+        "task_id": "s_3_05",
+        "type": "sporadic",
+        "release_time": 51,
+        "absolute_deadline": 58,
+        "execution_time": 3,
+        "energy_demand": 20.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          51,
+          52,
+          53
+        ],
+        "completed": true,
+        "completion_time": 53,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      }
+    ],
+    "aperiodic_jobs": [
+      {
+        "id": "a_3_01",
+        "task_id": "a_3_01",
+        "type": "aperiodic",
+        "release_time": 15,
+        "absolute_deadline": 23,
+        "execution_time": 1,
+        "energy_demand": 5.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          16
+        ],
+        "completed": true,
+        "completion_time": 16,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_02",
+        "task_id": "a_3_02",
+        "type": "aperiodic",
+        "release_time": 46,
+        "absolute_deadline": 61,
+        "execution_time": 4,
+        "energy_demand": 13.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          47,
+          48,
+          49,
+          50
+        ],
+        "completed": true,
+        "completion_time": 50,
+        "response_time": 4,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_03",
+        "task_id": "a_3_03",
+        "type": "aperiodic",
+        "release_time": 58,
+        "absolute_deadline": 72,
+        "execution_time": 3,
+        "energy_demand": 9.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          59,
+          60,
+          61
+        ],
+        "completed": true,
+        "completion_time": 61,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_04",
+        "task_id": "a_3_04",
+        "type": "aperiodic",
+        "release_time": 10,
+        "absolute_deadline": 17,
+        "execution_time": 1,
+        "energy_demand": 13.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          11
+        ],
+        "completed": true,
+        "completion_time": 11,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_05",
+        "task_id": "a_3_05",
+        "type": "aperiodic",
+        "release_time": 36,
+        "absolute_deadline": 45,
+        "execution_time": 1,
+        "energy_demand": 14.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          37
+        ],
+        "completed": true,
+        "completion_time": 37,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_06",
+        "task_id": "a_3_06",
+        "type": "aperiodic",
+        "release_time": 63,
+        "absolute_deadline": 67,
+        "execution_time": 3,
+        "energy_demand": 7.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          64,
+          65,
+          66
+        ],
+        "completed": true,
+        "completion_time": 66,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_07",
+        "task_id": "a_3_07",
+        "type": "aperiodic",
+        "release_time": 11,
+        "absolute_deadline": 21,
+        "execution_time": 3,
+        "energy_demand": 10.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          12,
+          13,
+          14
+        ],
+        "completed": true,
+        "completion_time": 14,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_08",
+        "task_id": "a_3_08",
+        "type": "aperiodic",
+        "release_time": 43,
+        "absolute_deadline": 53,
+        "execution_time": 2,
+        "energy_demand": 9.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          44,
+          45
+        ],
+        "completed": true,
+        "completion_time": 45,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_09",
+        "task_id": "a_3_09",
+        "type": "aperiodic",
+        "release_time": 21,
+        "absolute_deadline": 33,
+        "execution_time": 3,
+        "energy_demand": 5.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          22,
+          23,
+          24
+        ],
+        "completed": true,
+        "completion_time": 24,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_10",
+        "task_id": "a_3_10",
+        "type": "aperiodic",
+        "release_time": 38,
+        "absolute_deadline": 47,
+        "execution_time": 1,
+        "energy_demand": 15.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          39
+        ],
+        "completed": true,
+        "completion_time": 39,
+        "response_time": 1,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_11",
+        "task_id": "a_3_11",
+        "type": "aperiodic",
+        "release_time": 36,
+        "absolute_deadline": 48,
+        "execution_time": 3,
+        "energy_demand": 10.0,
+        "preempt": 0,
+        "scheduled_slots": [
+          37,
+          38,
+          39
+        ],
+        "completed": true,
+        "completion_time": 39,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      },
+      {
+        "id": "a_3_12",
+        "task_id": "a_3_12",
+        "type": "aperiodic",
+        "release_time": 15,
+        "absolute_deadline": 20,
+        "execution_time": 3,
+        "energy_demand": 8.0,
+        "preempt": 1,
+        "scheduled_slots": [
+          16,
+          17,
+          18
+        ],
+        "completed": true,
+        "completion_time": 18,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
+      }
+    ]
+  }
+}

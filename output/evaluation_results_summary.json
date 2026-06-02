@@ -1,0 +1,114 @@
+{
+  "summary": [
+    {
+      "schedule_file": "output\\schedule_result_scenario_01_uniform.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_01_uniform.json",
+      "evaluation_file": "output\\evaluation_results_scenario_01_uniform.json",
+      "hard_deadline_miss_rate": 0.06,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 292030.0,
+      "market_revenue": 319159.20000000007,
+      "objective_value": -27129.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_02_uniform.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_02_uniform.json",
+      "evaluation_file": "output\\evaluation_results_scenario_02_uniform.json",
+      "hard_deadline_miss_rate": 0.06,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 260698.40000000005,
+      "market_revenue": 288684.4,
+      "objective_value": -27985.99999999997
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_03_uniform.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_03_uniform.json",
+      "evaluation_file": "output\\evaluation_results_scenario_03_uniform.json",
+      "hard_deadline_miss_rate": 0.061224489795918366,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 273468.80000000005,
+      "market_revenue": 285286.20000000007,
+      "objective_value": -11817.400000000023
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_04_concentrated.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_04_concentrated.json",
+      "evaluation_file": "output\\evaluation_results_scenario_04_concentrated.json",
+      "hard_deadline_miss_rate": 0.0625,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 284490.0,
+      "market_revenue": 295335.20000000007,
+      "objective_value": -10845.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_05_concentrated.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_05_concentrated.json",
+      "evaluation_file": "output\\evaluation_results_scenario_05_concentrated.json",
+      "hard_deadline_miss_rate": 0.06,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 285806.0,
+      "market_revenue": 291613.20000000007,
+      "objective_value": -5807.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_06_concentrated.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_06_concentrated.json",
+      "evaluation_file": "output\\evaluation_results_scenario_06_concentrated.json",
+      "hard_deadline_miss_rate": 0.061224489795918366,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 326286.00000000006,
+      "market_revenue": 332862.4,
+      "objective_value": -6576.399999999965
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_07_mixed.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_07_mixed.json",
+      "evaluation_file": "output\\evaluation_results_scenario_07_mixed.json",
+      "hard_deadline_miss_rate": 0.058823529411764705,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 336820.0,
+      "market_revenue": 353304.20000000007,
+      "objective_value": -16484.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_08_mixed.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_08_mixed.json",
+      "evaluation_file": "output\\evaluation_results_scenario_08_mixed.json",
+      "hard_deadline_miss_rate": 0.061224489795918366,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 280843.6,
+      "market_revenue": 303295.80000000005,
+      "objective_value": -22452.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_09_mixed.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_09_mixed.json",
+      "evaluation_file": "output\\evaluation_results_scenario_09_mixed.json",
+      "hard_deadline_miss_rate": 0.061224489795918366,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 341760.0,
+      "market_revenue": 355095.20000000007,
+      "objective_value": -13335.20000000007
+    },
+    {
+      "schedule_file": "output\\schedule_result_scenario_10_mixed.json",
+      "scenario_file": "output\\sporadic_aperiodic_task\\scenario_10_mixed.json",
+      "evaluation_file": "output\\evaluation_results_scenario_10_mixed.json",
+      "hard_deadline_miss_rate": 0.0625,
+      "soft_deadline_miss_rate": 0.0,
+      "sporadic_value_rate": 1.0,
+      "generator_cost": 311593.6,
+      "market_revenue": 313213.20000000007,
+      "objective_value": -1619.6000000000931
+    }
+  ]
+}
