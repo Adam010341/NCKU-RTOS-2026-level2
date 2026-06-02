@@ -211,9 +211,10 @@ def get_valid_job_patterns(job: Job, frame_start: int) -> List[Tuple[int, ...]]:
         else:
             candidates = [()]
     else:
-        candidates = [()]
-        for length in range(1, min(3, job.remaining_e) + 1):
+        candidates = []
+        for length in range(min(3, job.remaining_e), 0, -1):
             candidates.extend(itertools.combinations((0, 1, 2), length))
+        candidates.append(())
             
     for pat in candidates:
         valid = True

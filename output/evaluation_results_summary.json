@@ -4,111 +4,111 @@
       "schedule_file": "output\\schedule_result_scenario_01_uniform.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_01_uniform.json",
       "evaluation_file": "output\\evaluation_results_scenario_01_uniform.json",
-      "hard_deadline_miss_rate": 0.06,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 292030.0,
-      "market_revenue": 319159.20000000007,
-      "objective_value": -27129.20000000007
+      "generator_cost": 232456.0,
+      "market_revenue": 245460.2,
+      "objective_value": -13004.200000000012
     },
     {
       "schedule_file": "output\\schedule_result_scenario_02_uniform.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_02_uniform.json",
       "evaluation_file": "output\\evaluation_results_scenario_02_uniform.json",
-      "hard_deadline_miss_rate": 0.06,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 260698.40000000005,
-      "market_revenue": 288684.4,
-      "objective_value": -27985.99999999997
+      "generator_cost": 252616.0,
+      "market_revenue": 272909.2,
+      "objective_value": -20293.20000000001
     },
     {
       "schedule_file": "output\\schedule_result_scenario_03_uniform.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_03_uniform.json",
       "evaluation_file": "output\\evaluation_results_scenario_03_uniform.json",
-      "hard_deadline_miss_rate": 0.061224489795918366,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 273468.80000000005,
-      "market_revenue": 285286.20000000007,
-      "objective_value": -11817.400000000023
+      "generator_cost": 264520.8,
+      "market_revenue": 265777.19999999995,
+      "objective_value": -1256.399999999965
     },
     {
       "schedule_file": "output\\schedule_result_scenario_04_concentrated.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_04_concentrated.json",
       "evaluation_file": "output\\evaluation_results_scenario_04_concentrated.json",
-      "hard_deadline_miss_rate": 0.0625,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 284490.0,
-      "market_revenue": 295335.20000000007,
-      "objective_value": -10845.20000000007
+      "generator_cost": 232800.4,
+      "market_revenue": 244886.2,
+      "objective_value": -12085.800000000017
     },
     {
       "schedule_file": "output\\schedule_result_scenario_05_concentrated.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_05_concentrated.json",
       "evaluation_file": "output\\evaluation_results_scenario_05_concentrated.json",
-      "hard_deadline_miss_rate": 0.06,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 285806.0,
-      "market_revenue": 291613.20000000007,
-      "objective_value": -5807.20000000007
+      "generator_cost": 236884.40000000002,
+      "market_revenue": 241057.2,
+      "objective_value": -4172.799999999988
     },
     {
       "schedule_file": "output\\schedule_result_scenario_06_concentrated.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_06_concentrated.json",
       "evaluation_file": "output\\evaluation_results_scenario_06_concentrated.json",
-      "hard_deadline_miss_rate": 0.061224489795918366,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 326286.00000000006,
-      "market_revenue": 332862.4,
-      "objective_value": -6576.399999999965
+      "generator_cost": 314307.2,
+      "market_revenue": 315126.80000000005,
+      "objective_value": -819.6000000000349
     },
     {
       "schedule_file": "output\\schedule_result_scenario_07_mixed.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_07_mixed.json",
       "evaluation_file": "output\\evaluation_results_scenario_07_mixed.json",
-      "hard_deadline_miss_rate": 0.058823529411764705,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 336820.0,
-      "market_revenue": 353304.20000000007,
-      "objective_value": -16484.20000000007
+      "generator_cost": 289486.0,
+      "market_revenue": 308427.20000000007,
+      "objective_value": -18941.20000000007
     },
     {
       "schedule_file": "output\\schedule_result_scenario_08_mixed.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_08_mixed.json",
       "evaluation_file": "output\\evaluation_results_scenario_08_mixed.json",
-      "hard_deadline_miss_rate": 0.061224489795918366,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 280843.6,
-      "market_revenue": 303295.80000000005,
-      "objective_value": -22452.20000000007
+      "generator_cost": 231796.0,
+      "market_revenue": 252899.8,
+      "objective_value": -21103.79999999999
     },
     {
       "schedule_file": "output\\schedule_result_scenario_09_mixed.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_09_mixed.json",
       "evaluation_file": "output\\evaluation_results_scenario_09_mixed.json",
-      "hard_deadline_miss_rate": 0.061224489795918366,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 341760.0,
-      "market_revenue": 355095.20000000007,
-      "objective_value": -13335.20000000007
+      "generator_cost": 291126.0,
+      "market_revenue": 304706.20000000007,
+      "objective_value": -13580.20000000007
     },
     {
       "schedule_file": "output\\schedule_result_scenario_10_mixed.json",
       "scenario_file": "output\\sporadic_aperiodic_task\\scenario_10_mixed.json",
       "evaluation_file": "output\\evaluation_results_scenario_10_mixed.json",
-      "hard_deadline_miss_rate": 0.0625,
+      "hard_deadline_miss_rate": 0.0,
       "soft_deadline_miss_rate": 0.0,
       "sporadic_value_rate": 1.0,
-      "generator_cost": 311593.6,
-      "market_revenue": 313213.20000000007,
-      "objective_value": -1619.6000000000931
+      "generator_cost": 351928.4,
+      "market_revenue": 338976.20000000007,
+      "objective_value": 12952.199999999953
     }
   ]
 }

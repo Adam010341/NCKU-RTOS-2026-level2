@@ -33,18 +33,18 @@ class TickRecord:
             # 將 Python 內部的 t=0~71，平移為報表上人類與 evaluator 預期的 t=1~72
             "t": self.t + 1,
             
-            # 強制將 P 字典裡面的所有數值四捨五入到小數點第 2 位
-            "P": {id_: round(val, 2) for id_, val in self.P.items()},
+            # 移除強制四捨五入以保留精確度，避免 Evaluator 判定失敗
+            "P": {id_: val for id_, val in self.P.items()},
             
-            # 強制將 2D 的 k 矩陣裡面的所有數值四捨五入到小數點第 2 位
-            "k": {j_id: {dev_id: round(v, 2) for dev_id, v in dev_map.items()} 
+            # 移除 2D 的 k 矩陣裡面的四捨五入
+            "k": {j_id: {dev_id: v for dev_id, v in dev_map.items()} 
                   for j_id, dev_map in self.k.items()},
             
-            # 售電量四捨五入
-            "sell": round(self.sell, 2),
+            # 售電量保留精確度
+            "sell": self.sell,
             
-            # SOC 四捨五入
-            "soc": {id_: round(val, 2) for id_, val in self.soc.items()},
+            # SOC 保留精確度
+            "soc": {id_: val for id_, val in self.soc.items()},
             
             "missed_aperiodic": self.missed_aperiodic,
             "rejected_sporadic": self.rejected_sporadic

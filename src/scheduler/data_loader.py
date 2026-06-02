@@ -95,7 +95,7 @@ def load_periodic_tasks(filepath: str) -> List[PeriodicTask]:
     tasks = []
     for t_id, t in data.get('periodic', {}).items():
         tasks.append(PeriodicTask(
-            id=t_id, r=t['r'], p=t['p'], e=t['e'], d=t['d'], w=t['w'], preempt=t['preempt']
+            id=t_id, r=t['r'] - 1, p=t['p'], e=t['e'], d=t['d'], w=t['w'], preempt=t['preempt']
         ))
     return tasks
 
