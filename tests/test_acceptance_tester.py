@@ -1,6 +1,6 @@
 import pytest
-from src.scheduler.models import SporadicTask, AperiodicTask
-from src.scheduler.acceptance_tester import AcceptanceTester
+from src.engine.models import SporadicTask, AperiodicTask
+from src.engine.acceptance_tester import AcceptanceTester
 
 @pytest.fixture
 def base_slack():

@@ -1,0 +1,8 @@
+{
+    "forecast_error_ratio": 0.2,
+    "random_seed": 2026,
+    "reserve_margin": 0.1,
+    "penalty_rate": 2.0,
+    "realtime_price_multiplier": 1.1,
+    "commitment_ratio": 0.8
+}

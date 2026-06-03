@@ -1,6 +1,6 @@
 import pytest
-from src.scheduler.models import ThermalGenerator, Battery
-from src.scheduler.state_machine import (
+from src.engine.models import ThermalGenerator, Battery
+from src.engine.state_machine import (
     validate_thermal_transition,
     RampRateViolation,
     MinTimeViolation,

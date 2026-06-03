@@ -5,8 +5,8 @@ import os
 # 確保 Python 能正確將當前目錄視為 src 的上層路徑
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from src.scheduler.models import PeriodicTask, ThermalGenerator, Battery, RenewableGenerator
-from src.scheduler.offline_planner import generate_offline_schedule
+from src.engine.models import PeriodicTask, ThermalGenerator, Battery, RenewableGenerator
+from src.engine.offline_planner import generate_offline_schedule
 
 renewables = [
         RenewableGenerator(
