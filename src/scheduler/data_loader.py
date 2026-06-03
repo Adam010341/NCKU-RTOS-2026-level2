@@ -110,13 +110,26 @@ def load_online_tasks(filepath: str) -> Tuple[Dict[int, List[SporadicTask]], Dic
     sporadic_dict = {}
     aperiodic_dict = {}
     
-    for st in data.get('sporadic', []):
-        task = SporadicTask(id=st['id'], r=st['r'], e=st['e'], w=st['w'], preempt=st['preempt'], d=st['d'])
-        sporadic_dict.setdefault(task.r, []).append(task)
-        
-    for at in data.get('aperiodic', []):
-        d_val = at.get('d', None) # aperiodic 可能沒有相對 d
-        task = AperiodicTask(id=at['id'], r=at['r'], e=at['e'], w=at['w'], preempt=at['preempt'], d=d_val)
-        aperiodic_dict.setdefault(task.r, []).append(task)
-        
+    sporadic_data = data.get('sporadic', {})
+    if isinstance(sporadic_data, list):
+        for st in sporadic_data:
+            task = SporadicTask(id=st['id'], r=st['r'], e=st['e'], w=st['w'], preempt=st.get('preempt', 1), d=st['d'])
+            sporadic_dict.setdefault(task.r, []).append(task)
+    elif isinstance(sporadic_data, dict):
+        for task_id, st in sporadic_data.items():
+            task = SporadicTask(id=task_id, r=st['r'], e=st['e'], w=st['w'], preempt=st.get('preempt', 1), d=st['d'])
+            sporadic_dict.setdefault(task.r, []).append(task)
+            
+    aperiodic_data = data.get('aperiodic', {})
+    if isinstance(aperiodic_data, list):
+        for at in aperiodic_data:
+            d_val = at.get('d', None)
+            task = AperiodicTask(id=at['id'], r=at['r'], e=at['e'], w=at['w'], preempt=at.get('preempt', 1), d=d_val)
+            aperiodic_dict.setdefault(task.r, []).append(task)
+    elif isinstance(aperiodic_data, dict):
+        for task_id, at in aperiodic_data.items():
+            d_val = at.get('d', None)
+            task = AperiodicTask(id=task_id, r=at['r'], e=at['e'], w=at['w'], preempt=at.get('preempt', 1), d=d_val)
+            aperiodic_dict.setdefault(task.r, []).append(task)
+            
     return sporadic_dict, aperiodic_dict

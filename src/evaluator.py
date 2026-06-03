@@ -43,8 +43,8 @@ def save_json(path, data):
 
 def unwrap_schedule(schedule_data):
     if isinstance(schedule_data, dict):
-        if "trajectory" in schedule_data:
-            return schedule_data["trajectory"]
+        if "schedule_result" in schedule_data:
+            return schedule_data["schedule_result"]
         if "schedule_result" in schedule_data:
             return schedule_data["schedule_result"]
         if "schedule" in schedule_data:
@@ -147,12 +147,13 @@ def load_scenario_jobs(scenario_path, time_base):
 
     data = load_json(scenario_path)
 
-    def convert(item, job_type):
-        r = scenario_release_to_schedule_time(int(item["r"]), time_base)
-        d = int(item["d"])
+    def convert(item, job_type, default_id):
+        r = int(item["r"])
+        d = int(item.get("d", 0))
+        item_id = str(item.get("id", default_id))
         return {
-            "id": str(item["id"]),
-            "task_id": str(item["id"]),
+            "id": item_id,
+            "task_id": item_id,
             "type": job_type,
             "r": r,
             "d_abs": r + d,
@@ -163,8 +164,17 @@ def load_scenario_jobs(scenario_path, time_base):
             "energy_by_slot": {},
         }
 
-    sporadic = [convert(x, "sporadic") for x in data.get("sporadic", [])]
-    aperiodic = [convert(x, "aperiodic") for x in data.get("aperiodic", [])]
+    sporadic_raw = data.get("sporadic", [])
+    if isinstance(sporadic_raw, dict):
+        sporadic = [convert(v, "sporadic", k) for k, v in sporadic_raw.items()]
+    else:
+        sporadic = [convert(x, "sporadic", x.get("id")) for x in sporadic_raw]
+
+    aperiodic_raw = data.get("aperiodic", [])
+    if isinstance(aperiodic_raw, dict):
+        aperiodic = [convert(v, "aperiodic", k) for k, v in aperiodic_raw.items()]
+    else:
+        aperiodic = [convert(x, "aperiodic", x.get("id")) for x in aperiodic_raw]
     return sporadic, aperiodic
 
 
@@ -252,16 +262,18 @@ def tardiness(job, time_base):
     return max(0, c - job["d_abs"])
 
 
+import statistics
+
 def compute_completion_jitter(periodic_jobs, time_base):
-    responses_by_task = defaultdict(list)
+    completions_by_task = defaultdict(list)
     for job in periodic_jobs:
-        rt = response_time(job, time_base)
-        if rt is not None:
-            responses_by_task[job["task_id"]].append(rt)
+        c = completion_time(job, time_base)
+        if c is not None:
+            completions_by_task[job["task_id"]].append(int(c))
 
     jitter_by_task = {}
-    for task_id, resps in responses_by_task.items():
-        jitter_by_task[task_id] = float(max(resps) - min(resps)) if len(resps) > 1 else 0.0
+    for task_id, comps in completions_by_task.items():
+        jitter_by_task[task_id] = statistics.pstdev(comps) if len(comps) > 1 else 0.0
 
     if not jitter_by_task:
         return 0.0, {}

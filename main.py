@@ -52,7 +52,7 @@ def save_schedule_to_json(trajectory: List[TickRecord], output_path: str):
     level2_metrics = getattr(trajectory, "level2_metrics", {})
     if level2_metrics:
         formatted_data = {
-            "trajectory": records,
+            "schedule_result": records,
             "level2_metrics": level2_metrics,
         }
     else:
