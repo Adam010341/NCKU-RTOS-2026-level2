@@ -173,22 +173,16 @@ class RenewableUncertaintyModel:
 
 def effective_discharge_limit(battery) -> float:
     """
-    SOC-dependent discharge limit (Constraint C8)：
+    SOC-dependent discharge limit (Constraint C9)：
     若 SOC 接近 soc_min，可放電量線性縮減至 0。
-
-    depth = (SOC - soc_min) / (soc_max - soc_min)
-    effective_max = discharge_max × min(1, depth / 0.2)
+    回傳：基於 C9 的最大『提供給負載之電量』上限。
     """
     soc_range = battery.soc_max - battery.soc_min
     if soc_range <= 0:
         return 0.0
     depth = (battery.current_soc - battery.soc_min) / soc_range
     scale = min(1.0, depth / 0.2)   # 在 20% depth 以下線性縮減
-    raw_limit = min(
-        float(battery.discharge_max),
-        battery.current_soc - battery.soc_min
-    )
-    return max(0.0, raw_limit * scale)
+    return float(battery.discharge_max) * scale
 
 
 def apply_discharge_with_efficiency(battery, requested_energy: float) -> float:
@@ -198,13 +192,19 @@ def apply_discharge_with_efficiency(battery, requested_energy: float) -> float:
     回傳實際提供給負載的 MWh（= requested_energy 若 SOC 足夠）。
     """
     eta_dis = getattr(battery, "discharge_efficiency", 0.95)
-    max_deliverable = effective_discharge_limit(battery)
+    
+    # 物理上限1: C9 規定的放電極限 (以提供給負載的電量計)
+    c9_limit = effective_discharge_limit(battery)
+    
+    # 物理上限2: 電池內剩餘 SOC 實際能轉化為負載電量的極限
+    soc_limit = (battery.current_soc - battery.soc_min) * eta_dis
+    
+    max_deliverable = max(0.0, min(c9_limit, soc_limit))
     actual_deliver = min(requested_energy, max_deliverable)
+    
     soc_decrease = actual_deliver / eta_dis   # C5
-    # 防止 SOC 低於下限 (Constraint C6)
-    soc_decrease = min(soc_decrease, battery.current_soc - battery.soc_min)
-    actual_deliver = soc_decrease * eta_dis
     battery.current_soc -= soc_decrease
+    
     # 累積放電量用於 degradation
     battery.total_discharged_energy = (
         getattr(battery, "total_discharged_energy", 0.0) + actual_deliver
@@ -317,10 +317,11 @@ def advanced_reschedule(
         for bat in batteries:
             if remaining_shortfall <= 0.01:
                 break
-            avail = min(float(bat.discharge_max),
-                        max(0.0, bat.current_soc - bat.soc_min))
             eta = getattr(bat, "discharge_efficiency", 0.95)
-            can_deliver = avail * eta
+            c9_limit = effective_discharge_limit(bat)
+            soc_limit = (bat.current_soc - bat.soc_min) * eta
+            can_deliver = max(0.0, min(c9_limit, soc_limit))
+            
             rescue = min(remaining_shortfall, can_deliver)
             if rescue > 0.01:
                 remaining_shortfall -= rescue

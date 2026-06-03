@@ -253,15 +253,15 @@ def tardiness(job, time_base):
 
 
 def compute_completion_jitter(periodic_jobs, time_base):
-    completions_by_task = defaultdict(list)
+    responses_by_task = defaultdict(list)
     for job in periodic_jobs:
-        c = completion_time(job, time_base)
-        if c is not None:
-            completions_by_task[job["task_id"]].append(c)
+        rt = response_time(job, time_base)
+        if rt is not None:
+            responses_by_task[job["task_id"]].append(rt)
 
     jitter_by_task = {}
-    for task_id, comps in completions_by_task.items():
-        jitter_by_task[task_id] = float(max(comps) - min(comps)) if len(comps) > 1 else 0.0
+    for task_id, resps in responses_by_task.items():
+        jitter_by_task[task_id] = float(max(resps) - min(resps)) if len(resps) > 1 else 0.0
 
     if not jitter_by_task:
         return 0.0, {}
